@@ -1,0 +1,42 @@
+---
+import Container from "./Container.astro";
+---
+
+<div class="relative" id="home">
+  <div
+    aria-hidden="true"
+    class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
+  >
+    <div
+      class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"
+    >
+    </div>
+    <div
+      class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"
+    >
+    </div>
+  </div>
+  <Container>
+    <div class="relative pt-36 ml-auto">
+      <div class="lg:w-2/3 text-center mx-auto">
+        <h1
+          class="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl"
+        >
+          Center Of Excellence <span class="text-primary dark:text-white"
+            >in e-Mobilty</span
+          >
+        </h1>
+        <p class="mt-8 text-gray-700 dark:text-gray-300 text-xl">
+          The Centre of Excellence in e-Mobility, housed within the School of
+          Engineering & Technology at CHRIST (Deemed to be University), Kengeri
+          Campus, is a pioneering initiative in collaboration with Decibels Lab
+          Pvt. Ltd. Originally established as the E-Mobility R & D Centre in
+          2018, it was funded by Safran Engineering Services and IEEE. With this
+          support, the Centre has evolved into a premier hub for innovation and
+          research, now recognized as the Centre of Excellence in e-Mobility by
+          CHRIST (Deemed to be University).
+        </p>
+      </div>
+    </div>
+  </Container>
+</div>

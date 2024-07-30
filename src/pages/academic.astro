@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+---
+
+<Layout title="Academic Programs | Centre of Excellence in e-Mobility">
+  <main class="pt-16 pb-20 lg:pt-20 lg:pb-32 bg-gradient-to-b from-blue-50 to-green-50 dark:from-gray-900 dark:to-gray-800">
+    <Container>
+      <div class="text-center mb-12 animate-fade-in" style={{marginTop:'50px'}}>
+        <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white">Academic Programs</h1>
+      </div>
+      
+      <section class="mb-16 animate-slide-up">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Degree Programs</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">M.Sc in Storage Materials</h3>
+            <p class="text-gray-600 dark:text-gray-300">Specialization in Battery Management Systems</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">PGDM in Electric Vehicle Technology</h3>
+            <p class="text-gray-600 dark:text-gray-300">Comprehensive program covering all aspects of EV technology</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-16 animate-slide-up" style="animation-delay: 0.2s;">
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Courses Offered</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Master Certification Program</h3>
+            <p class="text-gray-600 dark:text-gray-300">Battery Management Systems</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Master Certification Program</h3>
+            <p class="text-gray-600 dark:text-gray-300">Electric Powertrain</p>
+          </div>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+            <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-white">Micro Specialization Courses</h3>
+            <p class="text-gray-600 dark:text-gray-300">EV Systems</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="animate-fade-in" style="animation-delay: 0.4s;">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-4 text-gray-800 dark:text-white">Why Choose Our Programs?</h2>
+          <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+            <li>Industry-aligned curriculum</li>
+            <li>State-of-the-art laboratories</li>
+            <li>Experienced faculty from academia and industry</li>
+            <li>Opportunities for internships and industry projects</li>
+            <li>Focus on practical skills and hands-on experience</li>
+          </ul>
+        </div>
+      </section>
+    </Container>
+  </main>
+</Layout>
+
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  @media (max-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

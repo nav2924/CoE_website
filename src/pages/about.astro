@@ -1,0 +1,87 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Container from '../components/Container.astro';
+---
+
+<Layout title="About Us | Centre of Excellence in e-Mobility">
+  <main class="pt-16 pb-20 lg:pt-20 lg:pb-32" >
+    <Container>
+      <h1 class="text-4xl lg:text-5xl font-bold text-center mb-8 text-gray-800 dark:text-white" style={{marginTop:'50px'}}>About Our Centre</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Our Mission</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            The Centre of Excellence in e-Mobility at CHRIST (Deemed to be University) is dedicated to advancing the future of sustainable transportation through cutting-edge research, industry collaboration, and innovative education programs.
+          </p>
+        </div>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Our Vision</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            We aspire to be a global leader in e-mobility research and education, fostering a new generation of innovators and sustainable solutions that will shape the future of transportation.
+          </p>
+        </div>
+      </div>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white">Leadership Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            { name: "Dr. Parag Jose C", role: "Head- Centre of Excellence in e-Mobility" },
+            { name: "Dr. Pragash K", role: "Department of Electronics & Communication Engg., SoET" },
+            { name: "Dr. Harish Kumar", role: "Department of Mechanical Engg., SoET" },
+            { name: "Dr. Venkataswamy R", role: "Department of Electrical & Electronics Engg., SoET" },
+            { name: "Prof. Haneesh K.M", role: "Department of Electrical & Electronics Engg., SoET" },
+          ].map((member) => (
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+              <div class="w-24 h-24 mx-auto mb-4 bg-gray-300 dark:bg-gray-600 rounded-full"></div>
+              <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{member.name}</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">{member.role}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white">Research Teams</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            { name: "Range Extension in Batteries in Cold Conditions", lead: "Aswath M.Tech" },
+            { name: "Battery Characterisation & Digital Twinning", lead: "Geno P. M.Tech" },
+            { name: "Adaptive Driver Assistance & Communication Systems", lead: "Athira M.Tech" },
+            { name: "Digital Twin of E-2W", lead: "Sahana, RM" },
+            { name: "V2G and G2V Onboard Charger", lead: "Hrudhya Kurian, Ph.D" },
+            { name: "Virtual Driving & Connected Vehicles", lead: "New Team" },
+          ].map((team) => (
+            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+              <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-white">{team.name}</h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">Team Lead: {team.lead}</p>
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">5 members</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white">Advisory Board</h2>
+        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+          <ul class="list-disc list-inside text-gray-600 dark:text-gray-300">
+            <li>Dr. Fr. Sony J Chundattu, Director, School of Engineering & Technology</li>
+            <li>Dr. Raghunandan Kumar, Dean, School of Engineering & Technology</li>
+            <li>Dr. Mary Anitha, Associate Dean, School of Engineering & Technology</li>
+            <li>Fr. Shijin P.J, Assistant Director, School of Engineering & Technology</li>
+            <li>Dr. Joseph X Rodrigues, HOD, Department of Electrical & Electronics Engineering</li>
+          </ul>
+        </div>
+      </section>
+    </Container>
+  </main>
+</Layout>
+
+<style>
+  @media (max-width: 640px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

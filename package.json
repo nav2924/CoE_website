@@ -1,0 +1,21 @@
+{
+  "name": "astrolus",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
+    "astro": "^1.1.5",
+    "lucide-react": "^0.416.0",
+    "tailwindcss": "^3.4.7"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^1.0.0"
+  }
+}
