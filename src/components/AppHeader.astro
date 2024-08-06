@@ -6,7 +6,7 @@ import Container from "./Container.astro";
   <nav class="z-10 w-full absolute">
     <Container>
       <div
-        class="flex  items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative"
+        class="flex items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative"
       >
         <input
           aria-hidden="true"
@@ -16,14 +16,15 @@ import Container from "./Container.astro";
           class="hidden peer"
         />
         <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0">
-          <a href="#home" aria-label="logo" class="flex space-x-2 items-center">
-            <div aria-hidden="true" class="flex space-x-1">
-              <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
-              <div class="h-6 w-2 bg-primary"></div>
+          <a href="#home" aria-label="logo" class="flex space-x-1 items-center">
+            <div aria-hidden="true" class="flex">
+              <!-- <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
+              <div class="h-6 w-2 bg-green-600"></div> -->
+              <img src="public/logo.png" alt="" width="100" height="180" />
             </div>
-            <span class="text-2xl font-bold text-gray-900 dark:text-white"
-              >Center Of Excellence</span
-            >
+            <span class="text-3xl font-bold text-gray-900 dark:text-white"
+              >CO<span class="text-green-600">E</span>
+            </span>
           </a>
 
           <div class="relative flex items-center lg:hidden max-h-10">
@@ -66,7 +67,7 @@ import Container from "./Container.astro";
               <li>
                 <a
                   href="/"
-                  class="block md:px-4 transition hover:text-primary"
+                  class="block md:px-4 transition hover:text-green-600"
                 >
                   <span>Home</span>
                 </a>
@@ -74,7 +75,7 @@ import Container from "./Container.astro";
               <li>
                 <a
                   href="/about"
-                  class="block md:px-4 transition hover:text-primary"
+                  class="block md:px-4 transition hover:text-green-600"
                 >
                   <span>About Us</span>
                 </a>
@@ -82,7 +83,7 @@ import Container from "./Container.astro";
               <li>
                 <a
                   href="/research-and-innovation"
-                  class="block md:px-4 transition hover:text-primary"
+                  class="block md:px-4 transition hover:text-green-600"
                 >
                   <span>Research and Innovation</span>
                 </a>
@@ -90,7 +91,7 @@ import Container from "./Container.astro";
               <li>
                 <a
                   href="/academic"
-                  class="block md:px-4 transition hover:text-primary"
+                  class="block md:px-4 transition hover:text-green-600"
                 >
                   <span>Academic Progress</span>
                 </a>
@@ -98,26 +99,26 @@ import Container from "./Container.astro";
               <li>
                 <a
                   href="/events"
-                  class="block md:px-4 transition hover:text-primary"
+                  class="block md:px-4 transition hover:text-green-600"
                 >
                   <span>Events</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="/industry-engagement"
-                  class="block md:px-4 transition hover:text-primary"
+                  href="/industry"
+                  class="block md:px-4 transition hover:text-green-600"
                 >
                   <span>Industry Engagement</span>
                 </a>
               </li>
               <li>
-                <a
+                <!-- <a
                   href="/facilities"
-                  class="block md:px-4 transition hover:text-primary"
+                  class="block md:px-4 transition hover:text-green-600"
                 >
                   <span>Facilities</span>
-                </a>
+                </a> -->
               </li>
             </ul>
           </div>
