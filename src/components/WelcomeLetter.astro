@@ -1,0 +1,65 @@
+---
+import Container from "./Container.astro";
+---
+
+<div class="relative" id="welcome">
+  <Container>
+    <div class="max-w-4xl mx-auto">
+      <div
+        class="bg-parchment text-gray-800 p-8 rounded-lg shadow-xl relative overflow-hidden"
+      >
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-old-paper opacity-20"
+        >
+        </div>
+        <div class="relative z-10">
+          <h2 class="text-3xl font-serif mb-6 text-center">
+            Welcome to the Centre of Excellence in e-Mobility
+          </h2>
+          <!-- `<p class="mb-4 font-serif leading-relaxed">
+            As Head of the Centre, I am delighted to invite you to explore the innovative and transformative world of e-mobility with us.
+          </p>` -->
+          <p class="mb-4 font-serif leading-relaxed">
+            Since our inception as the E-Mobility R & D Centre in 2018, we have
+            continuously evolved, driven by our commitment to excellence in
+            research, education, and industry collaboration. Our partnership
+            with Decibels Lab Pvt. Ltd. and support from Safran Engineering
+            Services and IEEE have been instrumental in this journey.
+          </p>
+          <p class="mb-4 font-serif leading-relaxed">
+            At the Centre of Excellence in e-Mobility, we focus on critical
+            areas such as Energy Storage Systems, Advanced Powertrain
+            Technologies, Software-Driven Vehicles, and Sustainable
+            Transportation. Our goal is to equip students, researchers, and
+            industry professionals with the knowledge and skills needed to lead
+            in the rapidly advancing field of e-mobility.
+          </p>
+          <p class="mb-4 font-serif leading-relaxed">
+            We offer a range of programs, including M.Tech in Storage Materials
+            with a specialization in Battery Management Systems, PGDM in
+            Electric Vehicle Technology, and various certification courses.
+            Additionally, our consultancy services and startup incubation
+            support further our mission to foster innovation and sustainable
+            solutions.
+          </p>
+          <p class="mb-6 font-serif leading-relaxed">
+            Thank you for visiting our website. We look forward to collaborating
+            with you and advancing the future of e-mobility together.
+          </p>
+          <div class="text-right font-serif">
+            <p class="mb-1">Warm regards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>
+
+<style>
+  .bg-parchment {
+    background-color: #f4e9d5;
+  }
+  .bg-old-paper {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23000000' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+  }
+</style>

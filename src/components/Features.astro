@@ -1,4 +1,4 @@
----
+<!-- ---
 import Container from "./Container.astro";
 ---
 
@@ -8,140 +8,93 @@ import Container from "./Container.astro";
     <div
       class="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:divide-y-0 xl:grid-cols-3"
     >
-      <div
-        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
-      >
-        <div class="relative space-y-8 py-12 p-8">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png"
-            class="w-12"
-            width="512"
-            height="512"
-            alt="burger illustration"
-          />
-          <div class="space-y-2">
-            <h5
-              class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
+      {[
+        {title: 'Vision', image: 'https://cdn-icons-png.flaticon.com/512/10473/10473571.png'},
+        {title: 'Mission', image: 'https://cdn-icons-png.flaticon.com/512/3650/3650593.png '},
+        {title: 'Objective', image: 'https://cdn-icons-png.flaticon.com/512/3650/3650578.png '}
+      ].map(({title, image}) => (
+        <div
+          class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
+        >
+          <div class="relative space-y-8 py-12 p-8">
+            <img
+              src={image}
+              class="w-12"
+              width="512"
+              height="512"
+              alt={`${title} illustration`}
+            />
+            <div class="space-y-2">
+              <h5
+                class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
+              >
+                Our {title}
+              </h5>
+            </div>
+            <button
+              class="flex items-center justify-between group-hover:text-secondary read-more-btn"
+              data-title={title}
             >
-              Our Vision
-            </h5>
-            <p class="text-gray-600 dark:text-gray-300">
-              Energizing a new era of Electric Mobility through education,
-              innovation, and collaborative excellence.
-            </p>
+              <span class="text-sm">Read more</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </button>
           </div>
-          <a
-            href="#"
-            class="flex items-center justify-between group-hover:text-secondary"
-          >
-            <span class="text-sm">Read more</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
         </div>
-      </div>
-      <div
-        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
-      >
-        <div class="relative space-y-8 py-12 p-8">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4341/4341134.png"
-            class="w-12"
-            width="512"
-            height="512"
-            alt="burger illustration"
-          />
-          <div class="space-y-2">
-            <h5
-              class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
-            >
-              Mission
-            </h5>
-            <p class="text-gray-600 dark:text-gray-300">
-              Dedicated to propelling the future of sustainable transportation,
-              the center fosters innovation, encourages knowledge sharing, and
-              promotes industry collaboration. It offers a dynamic platform for
-              students, researchers, and industry leaders to explore, develop,
-              and implement cutting-edge e-mobility technologies.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="flex items-center justify-between group-hover:text-secondary"
-          >
-            <span class="text-sm">Read more</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div
-        class="group relative bg-white dark:bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10"
-      >
-        <div class="relative space-y-8 py-12 p-8">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/4341/4341160.png"
-            class="w-12"
-            width="512"
-            height="512"
-            alt="burger illustration"
-          />
-          <div class="space-y-2">
-            <h5
-              class="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
-            >
-              Objective
-            </h5>
-            <p class="text-gray-600 dark:text-gray-300">
-              • To develop proof of concepts, innovative solutions and
-              subsystems in E-Mobility. • To conduct training in Electric
-              Vehicle technologies in collaboration with industries. • To
-              develop Vocational and Skill development courses on E-Mobility. •
-              To develop a blended learning platform on Electric Vehicle
-              Technology, catering to students, researchers and industry
-              professionals, and offering comprehensive training modules for
-              academia and industry needs. • To provide consultancy to electric
-              mobility companies and to participate in product development. • To
-              promote Startups in E-Mobility.
-            </p>
-          </div>
-          <a
-            href="#"
-            class="flex items-center justify-between group-hover:text-secondary"
-          >
-            <span class="text-sm">Read more</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-5 h-5 -translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
-                clip-rule="evenodd"></path>
-            </svg>
-          </a>
-        </div>
-      </div>
+      ))}
     </div>
   </Container>
 </div>
+
+<div id="dialog" class="fixed inset-0 bg-gray-500 bg-opacity-75 hidden flex items-center justify-center z-50">
+  <div class="bg-white dark:bg-gray-800 p-8 rounded-lg max-w-2xl w-full">
+    <h2 id="dialog-title" class="text-2xl font-bold mb-4"></h2>
+    <p id="dialog-content" class="text-gray-600 dark:text-gray-300 mb-4"></p>
+    <button id="close-dialog" class="bg-secondary text-white px-4 py-2 rounded">Close</button>
+  </div>
+</div>
+
+<script>
+  const content = {
+    Vision: "Energizing a new era of Electric Mobility through education, innovation, and collaborative excellence.",
+    Mission: "Dedicated to propelling the future of sustainable transportation, the center fosters innovation, encourages knowledge sharing, and promotes industry collaboration. It offers a dynamic platform for students, researchers, and industry leaders to explore, develop, and implement cutting-edge e-mobility technologies.",
+    Objective: "• To develop proof of concepts, innovative solutions and subsystems in E-Mobility.\n• To conduct training in Electric Vehicle technologies in collaboration with industries.\n• To develop Vocational and Skill development courses on E-Mobility.\n• To develop a blended learning platform on Electric Vehicle Technology, catering to students, researchers and industry professionals, and offering comprehensive training modules for academia and industry needs.\n• To provide consultancy to electric mobility companies and to participate in product development.\n• To promote Startups in E-Mobility."
+  };
+
+  const dialog = document.getElementById('dialog');
+  const dialogTitle = document.getElementById('dialog-title');
+  const dialogContent = document.getElementById('dialog-content');
+  const closeDialog = document.getElementById('close-dialog');
+  const features = document.getElementById('features');
+
+  document.querySelectorAll('.read-more-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const title = btn.dataset.title;
+      dialogTitle.textContent = `Our ${title}`;
+      dialogContent.textContent = content[title];
+      dialog.classList.remove('hidden');
+      features.classList.add('pointer-events-none');
+    });
+  });
+
+  closeDialog.addEventListener('click', () => {
+    dialog.classList.add('hidden');
+    features.classList.remove('pointer-events-none');
+  });
+
+  dialog.addEventListener('click', (e) => {
+    if (e.target === dialog) {
+      dialog.classList.add('hidden');
+      features.classList.remove('pointer-events-none');
+    }
+  });
+</script> -->
