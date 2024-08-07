@@ -6,7 +6,7 @@ import Container from "./Container.astro";
   <nav class="z-10 w-full absolute">
     <Container>
       <div
-        class="flex items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative"
+        class="flex items-center justify-between pb-3 gap-6 md:pb-4 md:gap-0 relative"
       >
         <input
           aria-hidden="true"
@@ -17,13 +17,17 @@ import Container from "./Container.astro";
         />
         <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0">
           <a href="#home" aria-label="logo" class="flex space-x-1 items-center">
-            <div aria-hidden="true" class="flex">
-              <!-- <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
-              <div class="h-6 w-2 bg-green-600"></div> -->
-              <img src="./logo.jpg" alt="" width="100" height="180" />
+            <div aria-hidden="true" class="flex items-center justify-center">
+              <img
+                src="./logo.jpg"
+                alt="CoE logo"
+                width="180"
+                height="280"
+                class="object-contain"
+              />
             </div>
-            <span class="text-3xl font-bold text-gray-900 dark:text-white"
-              >Co<span class="text-green-600">E</span>
+            <span class="text-3xl font-bold text-gray-900 dark:text-white">
+              Co<span class="text-green-600">E</span>
             </span>
           </a>
 
@@ -31,7 +35,7 @@ import Container from "./Container.astro";
             <label
               role="button"
               for="toggle_nav"
-              aria-label="humburger"
+              aria-label="hamburger"
               id="hamburger"
               class="relative p-6 -mr-6"
             >
@@ -93,7 +97,7 @@ import Container from "./Container.astro";
                   href="/academic"
                   class="block md:px-4 transition hover:text-green-600"
                 >
-                  <span>Academic Progress</span>
+                  <span>Academic Programs</span>
                 </a>
               </li>
               <li>
@@ -112,14 +116,7 @@ import Container from "./Container.astro";
                   <span>Industry Engagement</span>
                 </a>
               </li>
-              <li>
-                <!-- <a
-                  href="/facilities"
-                  class="block md:px-4 transition hover:text-green-600"
-                >
-                  <span>Facilities</span>
-                </a> -->
-              </li>
+              <li></li>
             </ul>
           </div>
         </div>
