@@ -1,95 +1,157 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Container from '../components/Container.astro';
+import Layout from "../layouts/Layout.astro";
+import Container from "../components/Container.astro";
 ---
 
 <Layout title="Research and Projects | Centre of Excellence in e-Mobility">
   <main class="pt-16 pb-20 lg:pt-20 lg:pb-32">
-    <Container >
-      <div class="text-center mb-12" style={{marginTop:'50px'}}>
-        <img src="https://cdn-icons-png.flaticon.com/512/10473/10473339.png" alt="Research and Projects" class="w-32 h-32 mx-auto mb-6"/>
-        <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white">Research and Projects</h1>
+    <Container>
+      <div class="text-center mb-12" style={{ marginTop: "50px" }}>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/10473/10473339.png"
+          alt="Research and Projects"
+          class="w-32 h-32 mx-auto mb-6"
+        />
+        <h1
+          class="text-4xl lg:text-5xl font-bold text-gray-800 dark:text-white"
+        >
+          Research and Projects
+        </h1>
       </div>
-      
+
       <section class="mb-16">
-        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Research Areas</h2>
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">
+          Research Areas
+        </h2>
         <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {['Electric Vehicles (EV) technology', 'Battery and Energy Storage Systems', 'Charging Infrastructure', 'Smart Grids and Renewable Energy Integration', 'Autonomous and Connected Vehicles'].map((area) => (
-            <li class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">{area}</h3>
-            </li>
-          ))}
+          {
+            [
+              "Electric Vehicles (EV) technology",
+              "Battery and Energy Storage Systems",
+              "Charging Infrastructure",
+              "Smart Grids and Renewable Energy Integration",
+              "Autonomous and Connected Vehicles",
+            ].map((area) => (
+              <li class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+                  {area}
+                </h3>
+              </li>
+            ))
+          }
         </ul>
       </section>
 
       <section class="mb-16">
-        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Ongoing Projects</h2>
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">
+          Ongoing Projects
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {[
-            {
-              title: "Range Extension in Batteries in Cold Conditions",
-              description: "This project focuses on improving battery performance in cold environments. It involves developing technologies and methods to maintain battery efficiency and extend the driving range of electric vehicles (EVs) when exposed to low temperatures."
-            },
-            {
-              title: "Battery Characterisation & Digital Twinning",
-              description: "This project aims to create detailed models of battery behavior through advanced characterisation techniques. By developing digital twins, which are virtual replicas of physical batteries, it enables real-time monitoring, predictive maintenance, and optimization of battery systems."
-            },
-            {
-              title: "Adaptive Driver Assistance & Communication Systems",
-              description: "This project is dedicated to enhancing vehicle safety and driving experience through adaptive driver assistance systems. It involves the integration of advanced communication technologies to enable vehicles to interact with each other and with infrastructure, improving overall traffic management and reducing accidents."
-            },
-            {
-              title: "Digital Twin of E-2W",
-              description: "This project focuses on creating a digital twin for electric two-wheelers (E-2W). The digital twin serves as a real-time virtual model that mirrors the physical vehicle, enabling better performance tracking, predictive maintenance, and optimization of vehicle parameters for enhanced efficiency and user experience."
-            },
-            {
-              title: "V2G and G2V Onboard Charger",
-              description: "This project explores the development of bidirectional charging systems that support Vehicle-to-Grid (V2G) and Grid-to-Vehicle (G2V) functionalities. It involves creating onboard chargers that allow EVs to both draw energy from the grid and supply energy back to it, facilitating better energy management and grid stability."
-            },
-            {
-              title: "Virtual Driving & Connected Vehicles",
-              description: "This project aims to advance virtual reality driving and enhance connectivity in vehicles. It involves developing digital twin technologies for realistic driving simulations and enabling vehicles to communicate with each other and with infrastructure, improving the accuracy of driving models and the efficiency of transportation systems."
-            }
-          ].map((project) => (
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">{project.title}</h3>
-              <p class="text-gray-600 dark:text-gray-300">{project.description}</p>
-            </div>
-          ))}
+          {
+            [
+              {
+                title: "Range Extension in Batteries in Cold Conditions",
+                description:
+                  "This project focuses on improving battery performance in cold environments. It involves developing technologies and methods to maintain battery efficiency and extend the driving range of electric vehicles (EVs) when exposed to low temperatures.",
+              },
+              {
+                title: "Battery Characterisation & Digital Twinning",
+                description:
+                  "This project aims to create detailed models of battery behavior through advanced characterisation techniques. By developing digital twins, which are virtual replicas of physical batteries, it enables real-time monitoring, predictive maintenance, and optimization of battery systems.",
+              },
+              {
+                title: "Adaptive Driver Assistance & Communication Systems",
+                description:
+                  "This project is dedicated to enhancing vehicle safety and driving experience through adaptive driver assistance systems. It involves the integration of advanced communication technologies to enable vehicles to interact with each other and with infrastructure, improving overall traffic management and reducing accidents.",
+              },
+              {
+                title: "Digital Twin of E-2W",
+                description:
+                  "This project focuses on creating a digital twin for electric two-wheelers (E-2W). The digital twin serves as a real-time virtual model that mirrors the physical vehicle, enabling better performance tracking, predictive maintenance, and optimization of vehicle parameters for enhanced efficiency and user experience.",
+              },
+              {
+                title: "V2G and G2V Onboard Charger",
+                description:
+                  "This project explores the development of bidirectional charging systems that support Vehicle-to-Grid (V2G) and Grid-to-Vehicle (G2V) functionalities. It involves creating onboard chargers that allow EVs to both draw energy from the grid and supply energy back to it, facilitating better energy management and grid stability.",
+              },
+              {
+                title: "Virtual Driving & Connected Vehicles",
+                description:
+                  "This project aims to advance virtual reality driving and enhance connectivity in vehicles. It involves developing digital twin technologies for realistic driving simulations and enabling vehicles to communicate with each other and with infrastructure, improving the accuracy of driving models and the efficiency of transportation systems.",
+              },
+            ].map((project) => (
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">
+                  {project.title}
+                </h3>
+                <p class="text-gray-600 dark:text-gray-300">
+                  {project.description}
+                </p>
+              </div>
+            ))
+          }
         </div>
       </section>
 
       <section class="mb-16">
-        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Publications</h2>
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">
+          Publications
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {[
-            "Kurian, H., & Jose, P. C. (2023). \"LCLC Based AC-DC Single-Stage Resonant Converter with Natural Power Factor Correction\" in 2023 IEEE 3rd International Conference on Sustainable Energy and Future Electric Transportation (SEFET), August 9, 2023, pp. 1-6.",
-            "Kurian, H., & Chacko, P. J. (2023). \"On-board Converter for Electric Vehicle Charging Using LCLC Resonant Topology\" in 5th International Conference on Energy, Power & Environment (IECEPE 2023), June 2023.",
-            "Chacko, P. J., & Meikandasivam, S. (2021). \"An Optimized Energy Management System for Vehicle to Vehicle Power Transfer Using Microgrid Charging Station Integrated Gridable Electric Vehicles\" in Sustainable Energy, Grids and Networks, Volume 26 Issue -1, April 2021.",
-            "Chacko, P. J., Haneesh, K. M., & Rodrigues, J. X. (2021). \"Error-State Extended Kalman Filter Based Sensor Fusion for Optimized Drive Train Regulation of an Autonomous PHEV\" in Electric Vehicles and the Future of Energy Efficient Transportation, December 2020.",
-            "Steben Babu, Rahul Santhosh PM, Rishin Mathew, Muhammed Nazim, Parag Jose C, Haneesh K.M (2022) Electric Vehicle Drivetrain Optimization Strategy Using Genetic Algorithm, Sustainable Energy and Clean Technologies Jointly Organized by Department of Chemical Engineering and Department of Electrical Engineering, Pandit Deendayal Energy University, Gandhinagar on September 2 - 4, 2022"
-          ].map((publication, index) => (
-            <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-white">Publication {index + 1}</h3>
-              <p class="text-sm text-gray-600 dark:text-gray-300">{publication}</p>
-            </div>
-          ))}
+          {
+            [
+              'Kurian, H., & Jose, P. C. (2023). "LCLC Based AC-DC Single-Stage Resonant Converter with Natural Power Factor Correction" in 2023 IEEE 3rd International Conference on Sustainable Energy and Future Electric Transportation (SEFET), August 9, 2023, pp. 1-6.',
+              'Kurian, H., & Chacko, P. J. (2023). "On-board Converter for Electric Vehicle Charging Using LCLC Resonant Topology" in 5th International Conference on Energy, Power & Environment (IECEPE 2023), June 2023.',
+              'Chacko, P. J., & Meikandasivam, S. (2021). "An Optimized Energy Management System for Vehicle to Vehicle Power Transfer Using Microgrid Charging Station Integrated Gridable Electric Vehicles" in Sustainable Energy, Grids and Networks, Volume 26 Issue -1, April 2021.',
+              'Chacko, P. J., Haneesh, K. M., & Rodrigues, J. X. (2021). "Error-State Extended Kalman Filter Based Sensor Fusion for Optimized Drive Train Regulation of an Autonomous PHEV" in Electric Vehicles and the Future of Energy Efficient Transportation, December 2020.',
+              "Steben Babu, Rahul Santhosh PM, Rishin Mathew, Muhammed Nazim, Parag Jose C, Haneesh K.M (2022) Electric Vehicle Drivetrain Optimization Strategy Using Genetic Algorithm, Sustainable Energy and Clean Technologies Jointly Organized by Department of Chemical Engineering and Department of Electrical Engineering, Pandit Deendayal Energy University, Gandhinagar on September 2 - 4, 2022",
+            ].map((publication, index) => (
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-white">
+                  Publication {index + 1}
+                </h3>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  {publication}
+                </p>
+              </div>
+            ))
+          }
         </div>
         <div class="text-center mt-8">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300"
+          >
             View All Publications
           </button>
         </div>
       </section>
 
       <section>
-        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">Collaborations</h2>
+        <h2 class="text-3xl font-bold mb-8 text-gray-800 dark:text-white">
+          Collaborations
+        </h2>
         <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-          <p class="text-gray-600 dark:text-gray-300 mb-6">We are proud to collaborate with industry leaders and academic institutions to drive innovation in e-mobility:</p>
+          <p class="text-gray-600 dark:text-gray-300 mb-6">
+            We are proud to collaborate with industry leaders and academic
+            institutions to drive innovation in e-mobility:
+          </p>
           <div class="flex flex-wrap justify-center gap-8">
-            <img src="/path-to-decibels-lab-logo.png" alt="Decibels Lab" class="h-16 object-contain"/>
-            <img src="/path-to-mahindra-electric-logo.png" alt="Mahindra Electric" class="h-16 object-contain"/>
-            <img src="/path-to-safran-engineering-services-logo.png" alt="Safran Engineering Services" class="h-16 object-contain"/>
+            <img
+              src="/Decibels.png"
+              alt="Decibels Lab"
+              class="h-16 object-contain"
+              width="120"
+            />
+            <img
+              src="/Mahindra-Electric-Logo.png"
+              alt="Mahindra Electric"
+              class="h-16 object-contain"
+            />
+            <img
+              src="/safran logo.png"
+              alt="Safran Engineering Services"
+              class="h-16 object-contain"
+            />
           </div>
         </div>
       </section>

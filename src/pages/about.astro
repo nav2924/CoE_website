@@ -49,30 +49,43 @@ import Container from "../components/Container.astro";
               {
                 name: "Dr. Parag Jose C",
                 role: "Head- Centre of Excellence in e-Mobility",
-                img: "https://example.com/image1.jpg",
+                img: "/Parag Jose .JPG",
               },
               {
                 name: "Dr. Pragash K",
                 role: "Department of Electronics & Communication Engg., SoET",
-                img: "public/prakash.jpg",
+                img: "/prakash.jpg",
               },
               {
                 name: "Dr. Harish Kumar",
                 role: "Department of Mechanical Engg., SoET",
-                img: "https://example.com/image3.jpg",
+                img: "/sudharshan.jpg",
               },
               {
                 name: "Dr. Venkataswamy R",
                 role: "Department of Electrical & Electronics Engg., SoET",
-                img: "https://example.com/image4.jpg",
+                img: "/Venkataswamy R.png",
               },
               {
                 name: "Prof. Haneesh K.M",
                 role: "Department of Electrical & Electronics Engg., SoET",
-                img: "https://example.com/image5.jpg",
+                img: "/Haneesh KM.png",
               },
-            ].map((member) => (
-              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+              {
+                name: "Dr Thejaraju R",
+                role: "Department of Mechanical and Automobile Engg",
+                img: "/thejarraju.png",
+              },
+              {
+                name: "Dr. Ravikumar R",
+                role: "Department of Mechanical & Automobile Engineering",
+                img: "/Ravikumar R_2217.jpg",
+              },
+            ].map((member, index) => (
+              <div
+                key={index}
+                class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center"
+              >
                 <div class="w-24 h-24 mx-auto mb-4 bg-gray-300 dark:bg-gray-600 rounded-full">
                   <img
                     src={member.img}
@@ -92,60 +105,13 @@ import Container from "../components/Container.astro";
         </div>
       </section>
 
-      <section class="mb-16">
-        <h2
-          class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white"
-        >
-          Research Teams
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {
-            [
-              {
-                name: "Range Extension in Batteries in Cold Conditions",
-                lead: "Aswath M.Tech",
-              },
-              {
-                name: "Battery Characterisation & Digital Twinning",
-                lead: "Geno P. M.Tech",
-              },
-              {
-                name: "Adaptive Driver Assistance & Communication Systems",
-                lead: "Athira M.Tech",
-              },
-              { name: "Digital Twin of E-2W", lead: "Sahana, RM" },
-              {
-                name: "V2G and G2V Onboard Charger",
-                lead: "Hrudhya Kurian, Ph.D",
-              },
-              {
-                name: "Virtual Driving & Connected Vehicles",
-                lead: "New Team",
-              },
-            ].map((team) => (
-              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-white">
-                  {team.name}
-                </h3>
-                <p class="text-sm text-gray-600 dark:text-gray-300">
-                  Team Lead: {team.lead}
-                </p>
-                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
-                  5 members
-                </p>
-              </div>
-            ))
-          }
-        </div>
-      </section>
-
       <section>
-        <h2
+        <!-- <h2
           class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white"
         >
           Advisory Board
-        </h2>
-        <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+        </h2> -->
+        <!-- <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
           <ul class="list-disc list-inside text-gray-600 dark:text-gray-300">
             <li>
               Dr. Fr. Sony J Chundattu, Director, School of Engineering &
@@ -167,6 +133,162 @@ import Container from "../components/Container.astro";
               Electronics Engineering
             </li>
           </ul>
+        </div> -->
+        <section class="mb-16">
+          <h2
+            class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white"
+          >
+            Advisory Board
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {
+              [
+                {
+                  name: "Dr. Fr. Sony J Chundattu",
+                  role: "Director, School of Engineering & Technology",
+                  img: "/Dr. Fr. Sony J Chundattu.png",
+                },
+                {
+                  name: "Dr. Raghunandan Kumar",
+                  role: "Dean, School of Engineering & Technology",
+                  img: "/Dr. Raghunandan Kumar.png",
+                },
+                {
+                  name: "Dr. Mary Anitha",
+                  role: "Associate Dean, School of Engineering & Technology",
+                  img: "/Dr. Mary Anitha EA.png",
+                },
+                {
+                  name: "Fr. Shijin P.J",
+                  role: "Assistant Director, School of Engineering & Technology",
+                  img: "/Fr. Shijin P.J.png",
+                },
+                {
+                  name: "Dr. Joseph X Rodrigues",
+                  role: "HOD, Department of Electrical & Electronics Engineering",
+                  img: "/Dr. Joseph X Rodrigues.png",
+                },
+              ].map((member) => (
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center">
+                  <div class="w-24 h-24 mx-auto mb-4 bg-gray-300 dark:bg-gray-600 rounded-full">
+                    <img
+                      src={member.img}
+                      alt={`${member.name}'s photo`}
+                      class="w-full h-full rounded-full"
+                    />
+                  </div>
+                  <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+                    {member.name}
+                  </h3>
+                  <p class="text-sm text-gray-600 dark:text-gray-300">
+                    {member.role}
+                  </p>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+      </section>
+
+      <section class="mb-16">
+        <h2
+          class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white"
+        >
+          Research Teams
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {
+            [
+              {
+                name: "Autonomous PowerTrain",
+                lead: "Aaron Abraham Athiyalil B.Tech",
+              },
+              {
+                name: "Range Extension for Batteries in Cold Conditions",
+                lead: "Aswath M.Tech",
+              },
+              {
+                name: "Autonomous Fleet Control",
+                lead: "Athira M.Tech",
+              },
+              {
+                name: "Predictive Maintenance of EV Components",
+                lead: "Sahana Arulanandam BTech",
+              },
+              {
+                name: "Real Time Monitoring System for E2W with Live Location Tracking",
+                lead: "Geno P, M.Tech",
+              },
+              {
+                name: "Virtual Driving & Connected Vehicles",
+                lead: "Martin K Babu B.Tech",
+              },
+            ].map((team) => (
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                <h3 class="text-lg font-semibold mb-2 text-gray-800 dark:text-white">
+                  {team.name}
+                </h3>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Team Lead: {team.lead}
+                </p>
+                <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                  5 members
+                </p>
+              </div>
+            ))
+          }
+        </div>
+      </section>
+      <section class="mb-16">
+        <h2
+          class="text-3xl font-bold mb-8 text-center text-gray-800 dark:text-white"
+        >
+          Development Team
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {
+            [
+              {
+                name: "Athul Nambiar",
+                role: "Website Developer",
+                img: "/athul.jpg",
+              },
+              {
+                name: "Naveen V",
+                role: "Website Developer",
+                img: "/Naveen.jpeg",
+              },
+              {
+                name: "Dr. Harish Kumar",
+                role: "Department of Mechanical Engg., SoET",
+                img: "/sudharshan.jpg",
+              },
+              {
+                name: "Dr. Venkataswamy R",
+                role: "Department of Electrical & Electronics Engg., SoET",
+                img: "/Venkataswamy R.png",
+              },
+            ].map((member, index) => (
+              <div
+                key={index}
+                class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg text-center"
+              >
+                <div class="w-24 h-24 mx-auto mb-4 bg-gray-300 dark:bg-gray-600 rounded-full">
+                  <img
+                    src={member.img}
+                    alt={`${member.name}'s photo`}
+                    class="w-full h-full rounded-full"
+                  />
+                </div>
+                <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
+                  {member.name}
+                </h3>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  {member.role}
+                </p>
+              </div>
+            ))
+          }
         </div>
       </section>
     </Container>
