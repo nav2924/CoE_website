@@ -1,9 +1,10 @@
-# astrolus
+# Center of Excellence Lab
 
 A page template built with astro and tailwindcss using tailus blocks.
 
-![Tailus astro based theme](./public/astrolus-light.png)
-![Tailus astro based dark theme](./public/astrolus-dark.png)
+![image](https://github.com/user-attachments/assets/a7c7a665-b0e3-45c5-948f-903b09788410)
+![image](https://github.com/user-attachments/assets/15905bde-3355-4a66-a030-33160258c0cd)
+
 
 ## 🚀 Project Structure
 
